@@ -117,6 +117,65 @@
     transform: scale(1.05);
   }
   
+  /* projects page */
+  .projects-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  .projects-container h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  .project-card {
+    border: 2px solid var(--text-color);
+    border-radius: var(--btn-radius);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .project-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+  }
+  .project-subtitle {
+    font-style: italic;
+    margin-bottom: 0.75rem;
+    opacity: 0.8;
+  }
+  .project-stack {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+  }
+  .project-summary {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  .project-highlights {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  .project-demonstrates {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  .project-link {
+    display: inline-block;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: var(--btn-radius);
+    padding: 0.4rem 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+  }
+  .project-link:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+  }
+
   /* profile pic bottom-left, slightly larger */
   #profile-pic {
     position: fixed;

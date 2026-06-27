@@ -1,0 +1,52 @@
+<!-- projects.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Keegan Wooding</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="nav-button">Home</a>
+    <div class="dropdown">
+      <button class="nav-button">Links</button>
+      <div class="dropdown-content">
+        <a href="APR25Resume-Keegan-Wooding.pdf" target="_blank">Resume</a>
+        <a href="https://github.com/kwooding" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/keegan-wooding-441207260/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+    <a href="about.html" class="nav-button">About Me</a>
+    <a href="projects.html" class="nav-button">Projects</a>
+  </nav>
+
+  <div class="projects-container">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Real-Time Chat Server</h3>
+      <p class="project-subtitle">Distributed Backend System</p>
+      <p class="project-stack">Java 21 · Spring Boot 4 · PostgreSQL · Redis · Docker · Kubernetes · Nginx · AWS (LocalStack)</p>
+      <p class="project-summary">
+        A horizontally-scalable, real-time chat backend built to production-grade architecture standards.
+        Started as a single-process app and evolved into a stateless, authenticated, distributed system.
+      </p>
+      <ul class="project-highlights">
+        <li>Real-time WebSocket messaging via STOMP with a pub/sub broker model</li>
+        <li>Stateless JWT authentication with BCrypt password hashing and role-based access control</li>
+        <li>PostgreSQL persistence with JPA/Hibernate and Flyway schema migrations</li>
+        <li>Redis pub/sub for cross-instance message relay, presence tracking, and rate limiting</li>
+        <li>Multi-stage Docker builds orchestrated with Docker Compose (dual app instances + Nginx load balancer)</li>
+        <li>Kubernetes deployment with Deployments, Services, ConfigMaps, Secrets, health probes, self-healing, and Horizontal Pod Autoscaling</li>
+        <li>AWS cloud fundamentals (IAM, ECR, ECS, Lambda, CloudWatch) practiced locally via LocalStack</li>
+      </ul>
+      <p class="project-demonstrates">
+        <strong>Skills demonstrated:</strong> distributed-systems design, stateless service architecture, secure authentication patterns, containerization, container orchestration, and cloud infrastructure literacy.
+      </p>
+      <a href="https://github.com/kwooding/SpringBoot_Chat" target="_blank" class="project-link">View on GitHub</a>
+    </div>
+  </div>
+</body>
+</html>
